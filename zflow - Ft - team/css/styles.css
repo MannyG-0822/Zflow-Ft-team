@@ -2544,6 +2544,12 @@ footer {
     animation: rocketFloat 3s ease-in-out infinite;
     position: relative;
     z-index: 2;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.rocket-icon.loaded {
+    opacity: 1;
 }
 
 @keyframes rocketFloat {
@@ -2555,25 +2561,28 @@ footer {
 .rocket-container {
     position: relative;
     display: inline-block;
+    width: 100px;
+    height: 100px;
 }
 
-/* CTA Highlight */
-.cta-highlight {
-    color: #00BCD4;
-    font-weight: 700;
-    text-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
-    animation: ctaPulse 2s ease-in-out infinite;
+/* Placeholder pulsante mientras carga */
+.rocket-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(0, 212, 255, 0.08);
+    border: 2px solid rgba(0, 212, 255, 0.15);
+    animation: rocketPulse 1.2s ease-in-out infinite;
 }
 
-@keyframes ctaPulse {
-    0%, 100% {
-        opacity: 1;
-        text-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
-    }
-    50% {
-        opacity: 0.85;
-        text-shadow: 0 0 30px rgba(0, 188, 212, 0.8);
-    }
+.rocket-container:has(.loaded)::before {
+    display: none;
+}
+
+@keyframes rocketPulse {
+    0%, 100% { opacity: 0.4; transform: scale(0.95); }
+    50%       { opacity: 0.9; transform: scale(1.05); }
 }
 
 /* ============================================
