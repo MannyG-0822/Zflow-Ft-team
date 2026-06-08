@@ -378,7 +378,52 @@ nav.scrolled {
     padding: 4rem 0;
     position: relative;
     overflow: hidden;
+    overflow: visible;
+    -webkit-mask-image: linear-gradient(
+        to border-left,
+        transparent 0%,
+        black 0%,
+        black 88%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to border-right,
+        transparent 0%,
+        black 0%,
+        black 88%,
+        transparent 100%
+    );
 }
+
+
+
+
+.workflow-section::before,
+.workflow-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+.workflow-section::before {
+    left: 0;
+    background: linear-gradient(
+        transparent 100%
+    );
+}
+
+.workflow-section::after {
+    right: 0;
+    background: linear-gradient(
+        to left,
+        transparent 100%
+    );
+}
+
+
 
 .workflow-subtitle {
     text-align: center;
