@@ -1021,6 +1021,7 @@ nav.scrolled {
 /* HOVER EFFECT - Scale up slightly */
 .atom-container:hover {
     transform: scale(1.05);
+    
 }
 
 .atom-wrapper {
@@ -1049,11 +1050,13 @@ nav.scrolled {
 .orbit-ring:nth-child(1) {
     width: 130px;
     height: 130px;
+    
 }
 
 .orbit-ring:nth-child(2) {
     width: 270px;
     height: 270px;
+    
 }
 
 .orbit-ring:nth-child(3) {
@@ -1068,6 +1071,7 @@ nav.scrolled {
     left: 50%;
     transform-origin: center center;
     pointer-events: none;
+    
 }
 
 .orbit-1 {
@@ -1133,6 +1137,8 @@ nav.scrolled {
     height: 100%;
     object-fit: contain;
     filter: drop-shadow(0 0 8px rgba(33, 150, 243, 0.5));
+    border: 1px solid rgba(23, 216, 255, 0.15);
+    border-radius: 100%;
 }
 
 /* HOVER EFFECT - Brighter, larger icons */
