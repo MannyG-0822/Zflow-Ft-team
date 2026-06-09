@@ -1047,8 +1047,8 @@ nav.scrolled {
 }
 
 .orbit-ring:nth-child(1) {
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
 }
 
 .orbit-ring:nth-child(2) {
@@ -1071,10 +1071,10 @@ nav.scrolled {
 }
 
 .orbit-1 {
-    width: 180px;
-    height: 180px;
-    margin-left: -90px;
-    margin-top: -90px;
+    width: 160px;
+    height: 160px;
+    margin-left: -80px;
+    margin-top: -80px;
     animation: orbitClockwise 12s linear infinite;
 }
 
@@ -1262,6 +1262,20 @@ nav.scrolled {
 .orbit-2 .monday-icon:nth-child(4) {
     top: 50%;
     left: 0;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.orbit-2 .monday-icon:nth-child(5) {
+    top: 25%;
+    left: 85%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.orbit-2 .monday-icon:nth-child(6) {
+    top: 75%;
+    left: 15%;
     margin-left: -20px;
     margin-top: -20px;
 }
