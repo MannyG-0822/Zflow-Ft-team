@@ -1,0 +1,10 @@
+.git
+.gitignore
+.claude
+*.md
+LICENSE
+node_modules
+zflow-backup
+zflow
+website-deploy
+.DS_Store
