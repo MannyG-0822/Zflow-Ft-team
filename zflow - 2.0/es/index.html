@@ -259,6 +259,88 @@
             </div>
         </section>
 
+        <!-- Sección: Agentes a través de sus herramientas -->
+        <section class="integrations-section" id="integraciones">
+            <h2 class="integrations-headline">Cada herramienta que usas. <span>Agentes que trabajan en todas ellas.</span></h2>
+            <p class="integrations-subtext">Ya sea un solo flujo de trabajo o toda su operación, los agentes de IA de Zoflow conectan sus herramientas existentes y coordinan entre departamentos. Sin reemplazar lo que ya funciona.</p>
+
+            <div class="integrations-track-wrap">
+                <div class="integrations-track" id="integrationsTrackEs"></div>
+            </div>
+        </section>
+
+        <script>
+        const zoflowEsSlackSVG = '<svg viewBox="0 0 127 127" xmlns="http://www.w3.org/2000/svg"><path d="M27.2 80c0 7.3-5.9 13.2-13.2 13.2C6.7 93.2.8 87.3.8 80c0-7.3 5.9-13.2 13.2-13.2h13.2V80zm6.6 0c0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2v33c0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V80z" fill="#E01E5A"/><path d="M47 27c-7.3 0-13.2-5.9-13.2-13.2C33.8 6.5 39.7.6 47 .6c7.3 0 13.2 5.9 13.2 13.2V27H47zm0 6.7c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H13.9C6.6 60.1.7 54.2.7 46.9c0-7.3 5.9-13.2 13.2-13.2H47z" fill="#36C5F0"/><path d="M99.9 46.9c0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H99.9V46.9zm-6.6 0c0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V13.8C66.9 6.5 72.8.6 80.1.6c7.3 0 13.2 5.9 13.2 13.2v33.1z" fill="#2EB67D"/><path d="M80.1 99.8c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V99.8h13.2zm0-6.6c-7.3 0-13.2-5.9-13.2-13.2 0-7.3 5.9-13.2 13.2-13.2h33.1c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H80.1z" fill="#ECB22E"/></svg>';
+
+        const zoflowEsTwilioSVG = '<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M128,0 C198.656,0 256,57.344 256,128 C256,198.656 198.656,256 128,256 C57.344,256 0,198.656 0,128 C0,57.344 57.344,0 128,0 Z M128,33.792 C75.776,33.792 33.792,75.776 33.792,128 C33.792,180.224 75.776,222.208 128,222.208 C180.224,222.208 222.208,180.224 222.208,128 C222.208,75.776 180.224,33.792 128,33.792 Z M159.744,133.12 C174.448029,133.12 186.368,145.039971 186.368,159.744 C186.368,174.448029 174.448029,186.368 159.744,186.368 C145.039971,186.368 133.12,174.448029 133.12,159.744 C133.12,145.039971 145.039971,133.12 159.744,133.12 Z M96.256,133.12 C110.960029,133.12 122.88,145.039971 122.88,159.744 C122.88,174.448029 110.960029,186.368 96.256,186.368 C81.5519708,186.368 69.632,174.448029 69.632,159.744 C69.632,145.039971 81.5519708,133.12 96.256,133.12 Z M159.744,69.632 C174.448029,69.632 186.368,81.5519708 186.368,96.256 C186.368,110.960029 174.448029,122.88 159.744,122.88 C145.039971,122.88 133.12,110.960029 133.12,96.256 C133.12,81.5519708 145.039971,69.632 159.744,69.632 Z M96.256,69.632 C110.960029,69.632 122.88,81.5519708 122.88,96.256 C122.88,110.960029 110.960029,122.88 96.256,122.88 C81.5519708,122.88 69.632,110.960029 69.632,96.256 C69.632,81.5519708 81.5519708,69.632 96.256,69.632 Z" fill="#F12E45"/></svg>';
+
+        const zoflowEsGmailSVG = '<svg viewBox="0 -31.5 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M58.1818182,192.049515 L58.1818182,93.1404244 L27.5066233,65.0770089 L0,49.5040608 L0,174.59497 C0,184.253152 7.82545455,192.049515 17.4545455,192.049515 L58.1818182,192.049515 Z" fill="#4285F4"/><path d="M197.818182,192.049515 L238.545455,192.049515 C248.203636,192.049515 256,184.224061 256,174.59497 L256,49.5040608 L224.844415,67.3422767 L197.818182,93.1404244 L197.818182,192.049515 Z" fill="#34A853"/><polygon fill="#EA4335" points="58.1818182 93.1404244 54.0077618 54.4932827 58.1818182 17.5040608 128 69.8676972 197.818182 17.5040608 202.487488 52.4960089 197.818182 93.1404244 128 145.504061"/><path d="M197.818182,17.5040608 L197.818182,93.1404244 L256,49.5040608 L256,26.2313335 C256,4.64587897 231.36,-7.65957557 214.109091,5.28587897 L197.818182,17.5040608 Z" fill="#FBBC04"/><path d="M0,49.5040608 L26.7588051,69.5731646 L58.1818182,93.1404244 L58.1818182,17.5040608 L41.8909091,5.28587897 C24.6109091,-7.65957557 0,4.64587897 0,26.2313335 L0,49.5040608 Z" fill="#C5221F"/></svg>';
+
+        const zoflowEsGcalSVG = '<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><rect width="512" height="512" rx="15%" fill="#ffffff"/><path d="M100 340h74V174H340v-74H137Q100 100 100 135" fill="#4285f4"/><path d="M338 100v76h74v-41q0-35-35-35" fill="#1967d2"/><path d="M338 174h74V338h-74" fill="#fbbc04"/><path d="M100 338v39q0 35 35 35h41v-74" fill="#188038"/><path d="M174 338H338v74H174" fill="#34a853"/><path d="M338 412v-74h74" fill="#ea4335"/><path d="M204 229a25 22 1 1 1 25 27h-9h9a25 22 1 1 1-25 27M270 231l27-19h4v-7V308" stroke="#4285f4" stroke-width="15" stroke-linejoin="bevel" fill="none"/></svg>';
+
+        const zoflowEsZoomSVG = '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#4A8CFF"/><path d="M9 12.5a2 2 0 0 1 2-2h6.6a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2v-7z" fill="#fff"/><path d="M20.5 14.2l3.2-2.3c.5-.35 1 0 1 .6v7c0 .6-.5 1-1 .6l-3.2-2.3v-3.6z" fill="#fff"/></svg>';
+
+        const zoflowEsWordSVG = '<svg viewBox="0 0 1881.25 1750" xmlns="http://www.w3.org/2000/svg"><path fill="#41A5EE" d="M1801.056,0H517.694C473.404,0,437.5,35.904,437.5,80.194V437.5l743.75,218.75l700-218.75V80.194C1881.25,35.904,1845.346,0,1801.056,0z"/><path fill="#2B7CD3" d="M1881.25,437.5H437.5V875l743.75,131.25l700-131.25V437.5z"/><path fill="#185ABD" d="M437.5,875v437.5l700,87.5l743.75-87.5V875H437.5z"/><path fill="#103F91" d="M517.694,1750h1283.363c44.29,0,80.194-35.904,80.194-80.194V1312.5H437.5v357.306C437.5,1714.096,473.404,1750,517.694,1750z"/><linearGradient id="zfesw" gradientUnits="userSpaceOnUse" x1="167.2057" y1="1420.9117" x2="795.2943" y2="333.0883" gradientTransform="matrix(1 0 0 -1 0 1752)"><stop offset="0" style="stop-color:#2368C4"/><stop offset="0.5" style="stop-color:#1A5DBE"/><stop offset="1" style="stop-color:#1146AC"/></linearGradient><path fill="url(#zfesw)" d="M80.194,393.75h802.112c44.29,0,80.194,35.904,80.194,80.194v802.113c0,44.29-35.904,80.194-80.194,80.194H80.194c-44.29,0-80.194-35.904-80.194-80.194V473.944C0,429.654,35.904,393.75,80.194,393.75z"/><path fill="#FFFFFF" d="M329.088,1008.788c1.575,12.381,2.625,23.144,3.106,32.375h1.837c0.7-8.75,2.158-19.294,4.375-31.631c2.217-12.338,4.215-22.765,5.994-31.281l84.35-363.913h109.069l87.5,358.444c5.084,22.288,8.723,44.881,10.894,67.637h1.444c1.631-22.047,4.671-43.966,9.1-65.625l69.781-360.631h99.269l-122.588,521.5H577.238L494.113,790.3c-2.406-9.931-5.162-22.925-8.181-38.894c-3.019-15.969-4.9-27.65-5.644-35h-1.444c-0.962,8.487-2.844,21.088-5.644,37.8c-2.8,16.713-5.046,29.079-6.738,37.1l-78.138,344.269h-117.95L147.131,614.337h101.062l75.994,364.656C325.894,986.475,327.513,996.45,329.088,1008.788z"/></svg>';
+
+        const zoflowEsExcelSVG = '<svg viewBox="0 0 2289.75 2130" xmlns="http://www.w3.org/2000/svg"><path fill="#185C37" d="M1437.75,1011.75L532.5,852v1180.393c0,53.907,43.7,97.607,97.607,97.607h1562.036c53.907,0,97.607-43.7,97.607-97.607V1597.5L1437.75,1011.75z"/><path fill="#21A366" d="M1437.75,0H630.107C576.2,0,532.5,43.7,532.5,97.607V532.5l905.25,532.5L1917,1224.75L2289.75,1065V532.5L1437.75,0z"/><path fill="#107C41" d="M532.5,532.5h905.25V1065H532.5V532.5z"/><linearGradient id="zfese" gradientUnits="userSpaceOnUse" x1="203.5132" y1="1729.0183" x2="967.9868" y2="404.9817" gradientTransform="matrix(1 0 0 -1 0 2132)"><stop offset="0" style="stop-color:#18884F"/><stop offset="0.5" style="stop-color:#117E43"/><stop offset="1" style="stop-color:#0B6631"/></linearGradient><path fill="url(#zfese)" d="M97.607,479.25h976.285c53.907,0,97.607,43.7,97.607,97.607v976.285c0,53.907-43.7,97.607-97.607,97.607H97.607C43.7,1650.75,0,1607.05,0,1553.143V576.857C0,522.95,43.7,479.25,97.607,479.25z"/><path fill="#FFFFFF" d="M302.3,1382.264l205.332-318.169L319.5,747.683h151.336l102.666,202.35c9.479,19.223,15.975,33.494,19.49,42.919h1.331c6.745-15.336,13.845-30.228,21.3-44.677L725.371,747.79h138.929l-192.925,314.548L869.2,1382.263H721.378L602.79,1160.158c-5.586-9.45-10.326-19.376-14.164-29.66h-1.757c-3.474,10.075-8.083,19.722-13.739,28.755l-122.102,223.011H302.3z"/><path fill="#33C481" d="M2192.143,0H1437.75v532.5h852V97.607C2289.75,43.7,2246.05,0,2192.143,0z"/><path fill="#107C41" d="M1437.75,1065h852v532.5h-852V1065z"/></svg>';
+
+        const zoflowEsQbSVG = '<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M25 0A25 25 0 0 0 0 25a25 25 0 0 0 25 25 25 25 0 0 0 25 -25A25 25 0 0 0 25 0zm1.3375 8.611458333333333c1.9904166666666666 0 3.6033333333333335 1.616666666666667 3.6033333333333335 3.610833333333334v18.888958333333335h3.3333333333333335c3.3625 0 6.098958333333334 -2.7408333333333337 6.098958333333334 -6.110416666666667 0 -3.3693750000000002 -2.736666666666667 -6.111041666666667 -6.099166666666667 -6.111041666666667h-1.38625V15.277916666666668h1.38625c5.358750000000001 0 9.703541666666668 4.3535416666666675 9.703541666666668 9.722916666666666 0 5.369583333333334 -4.344791666666668 9.722083333333334 -9.703541666666668 9.722083333333334H26.3375zM16.632708333333333 15.277083333333335h6.935625v26.110416666666666c-1.990625 0 -3.604166666666667 -1.6164583333333336 -3.604166666666667 -3.610833333333334V18.88791666666667H16.632708333333333c-3.36375 0 -6.099375 2.741666666666667 -6.099375 6.11125 0 3.369791666666667 2.735625 6.111041666666667 6.099375 6.111041666666667h1.38625v3.610833333333334h-1.38625c-5.359375 0 -9.703541666666668 -4.3525 -9.703541666666668 -9.721875 0 -5.368958333333334 4.344166666666667 -9.722083333333334 9.703541666666668 -9.722083333333334Z" fill="#2ca01c"/></svg>';
+
+        const zoflowEsGdriveSVG = '<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#1e88e5" d="M38.59,39c-0.535,0.93-0.298,1.68-1.195,2.197C36.498,41.715,35.465,42,34.39,42H13.61c-1.074,0-2.106-0.285-3.004-0.802C9.708,40.681,9.945,39.93,9.41,39l7.67-9h13.84L38.59,39z"/><path fill="#fbc02d" d="M27.463,6.999c1.073-0.002,2.104-0.716,3.001-0.198c0.897,0.519,1.66,1.27,2.197,2.201l10.39,17.996c0.537,0.93,0.807,1.967,0.808,3.002c0.001,1.037-1.267,2.073-1.806,3.001l-11.127-3.005l-6.924-11.993L27.463,6.999z"/><path fill="#e53935" d="M43.86,30c0,1.04-0.27,2.07-0.81,3l-3.67,6.35c-0.53,0.78-1.21,1.4-1.99,1.85L30.92,30H43.86z"/><path fill="#4caf50" d="M5.947,33.001c-0.538-0.928-1.806-1.964-1.806-3c0.001-1.036,0.27-2.073,0.808-3.004l10.39-17.996c0.537-0.93,1.3-1.682,2.196-2.2c0.897-0.519,1.929,0.195,3.002,0.197l3.459,11.009l-6.922,11.989L5.947,33.001z"/><path fill="#1565c0" d="M17.08,30l-6.47,11.2c-0.78-0.45-1.46-1.07-1.99-1.85L4.95,33c-0.54-0.93-0.81-1.96-0.81-3H17.08z"/><path fill="#2e7d32" d="M30.46,6.8L24,18L17.53,6.8c0.78-0.45,1.66-0.73,2.6-0.79L27.46,6C28.54,6,29.57,6.28,30.46,6.8z"/></svg>';
+
+        const zoflowEsFbSVG = '<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="#1877F2"/><path d="M32 15h-3.5c-1.5 0-2.5 1-2.5 2.7V21h6l-.8 5h-5.2v12h-5V26h-4v-5h4v-3.8c0-4 2.5-6.7 6.5-6.7H32v4.5z" fill="#fff"/></svg>';
+
+        const zoflowEsGitlabSVG = '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#FC6D26" d="M14.975 8.904L14.19 6.55l-1.552-4.67a.268.268 0 00-.255-.18.268.268 0 00-.254.18l-1.552 4.667H5.422L3.87 1.879a.267.267 0 00-.254-.179.267.267 0 00-.254.18l-1.55 4.667-.784 2.357a.515.515 0 00.193.583l6.78 4.812 6.778-4.812a.516.516 0 00.196-.583z"/><path fill="#E24329" d="M8 14.296l2.578-7.75H5.423L8 14.296z"/><path fill="#FC6D26" d="M8 14.296l-2.579-7.75H1.813L8 14.296z"/><path fill="#FCA326" d="M1.81 6.549l-.784 2.354a.515.515 0 00.193.583L8 14.3 1.81 6.55z"/><path fill="#E24329" d="M1.812 6.549h3.612L3.87 1.882a.268.268 0 00-.254-.18.268.268 0 00-.255.18L1.812 6.549z"/><path fill="#FC6D26" d="M8 14.296l2.578-7.75h3.614L8 14.296z"/><path fill="#FCA326" d="M14.19 6.549l.783 2.354a.514.514 0 01-.193.583L8 14.296l6.188-7.747h.001z"/><path fill="#E24329" d="M14.19 6.549H10.58l1.551-4.667a.267.267 0 01.255-.18c.115 0 .217.073.254.18l1.552 4.667z"/></svg>';
+
+        const zoflowEsTools = [
+            { name: 'Salesforce', icon: 'fa-brands fa-salesforce', color: '#00A1E0' },
+            { name: 'Slack', svg: zoflowEsSlackSVG },
+            { name: 'Microsoft 365', icon: 'fa-brands fa-microsoft', color: '#0078D4' },
+            { name: 'Gmail', svg: zoflowEsGmailSVG },
+            { name: 'Google Calendar', svg: zoflowEsGcalSVG },
+            { name: 'Google Drive', svg: zoflowEsGdriveSVG },
+            { name: 'Microsoft Word', svg: zoflowEsWordSVG },
+            { name: 'Microsoft Excel', svg: zoflowEsExcelSVG },
+            { name: 'QuickBooks', svg: zoflowEsQbSVG },
+            { name: 'HubSpot', icon: 'fa-brands fa-hubspot', color: '#FF7A59' },
+            { name: 'Mailchimp', icon: 'fa-brands fa-mailchimp', color: '#FFE01B' },
+            { name: 'Dropbox', icon: 'fa-brands fa-dropbox', color: '#0061FF' },
+            { name: 'Stripe', icon: 'fa-brands fa-stripe', color: '#635BFF' },
+            { name: 'Shopify', icon: 'fa-brands fa-shopify', color: '#95BF47' },
+            { name: 'WordPress', icon: 'fa-brands fa-wordpress', color: '#21759B' },
+            { name: 'Zoom', svg: zoflowEsZoomSVG },
+            { name: 'Trello', icon: 'fa-brands fa-trello', color: '#0052CC' },
+            { name: 'GitHub', icon: 'fa-brands fa-github', color: '#ffffff' },
+            { name: 'GitLab', svg: zoflowEsGitlabSVG },
+            { name: 'Figma', icon: 'fa-brands fa-figma', color: '#F24E1E' },
+            { name: 'WhatsApp', icon: 'fa-brands fa-whatsapp', color: '#25D366' },
+            { name: 'Telegram', icon: 'fa-brands fa-telegram', color: '#26A5E4' },
+            { name: 'Facebook', svg: zoflowEsFbSVG },
+            { name: 'LinkedIn', icon: 'fa-brands fa-linkedin', color: '#0A66C2' },
+            { name: 'Discord', icon: 'fa-brands fa-discord', color: '#5865F2' },
+            { name: 'Atlassian (Jira)', icon: 'fa-brands fa-atlassian', color: '#0052CC' },
+            { name: 'Twilio', svg: zoflowEsTwilioSVG },
+            { name: 'PayPal', icon: 'fa-brands fa-paypal', color: '#00457C' }
+        ];
+
+        const integrationsTrackEs = document.getElementById('integrationsTrackEs');
+        const allZoflowEsTools = [...zoflowEsTools, ...zoflowEsTools];
+        allZoflowEsTools.forEach(tool => {
+            const div = document.createElement('div');
+            div.className = 'integrations-icon';
+            div.title = tool.name;
+            if (tool.svg) {
+                div.innerHTML = tool.svg;
+            } else {
+                const icon = document.createElement('i');
+                icon.className = tool.icon;
+                icon.style.color = tool.color;
+                div.appendChild(icon);
+            }
+            integrationsTrackEs.appendChild(div);
+        });
+        </script>
+
         <!-- CONTACT SECTION - FINAL LAYOUT -->
         <section class="contact-section">
             <div class="contact-container">
@@ -299,19 +381,20 @@
                                     <img src="https://cdn.prod.website-files.com/656da6fea306219773d04208/69f88a1056848ebc67e90d57_header-agent-image-it.avif" alt="IT">
                                 </div>
                                 <div class="monday-icon">
-                                    <img src="https://cdn.prod.website-files.com/656da6fea306219773d04208/69f88a10593e3b8c197d02db_header-agent-image-pmo.avif" alt="PMO">
+                                    <img src="../images/perfil-1.jpg" alt="Persona 1">
+                                    
                                 </div>
                                 <div class="monday-icon">
                                     <img src="https://cdn.prod.website-files.com/656da6fea306219773d04208/69f88a103862b1faf5d65b2d_header-agent-image-operations.avif" alt="Operations">
                                 </div>
                                 <div class="monday-icon">
-                                    <img src="https://cdn.prod.website-files.com/656da6fea306219773d04208/69f88a103dc524a6a1197c87_header-agent-image-sales.avif" alt="Sales">
+                                    <img src="../images/perfil-2.jpg" alt="Persona 2">
                                 </div>
                                 <div class="monday-icon">
                                     <img src="https://cdn.prod.website-files.com/656da6fea306219773d04208/69f88a109bc818e983aff293_header-agent-image-marketing.avif" alt="Marketing">
                                 </div>
                                 <div class="monday-icon">
-                                    <img src="https://cdn.prod.website-files.com/656da6fea306219773d04208/69f88a10c168cfc39a76cdc9_header-agent-image-hr.avif" alt="HR">
+                                    <img src="../images/perfil-3.jpg" alt="Persona 3">
                                 </div>
                             </div>
 
