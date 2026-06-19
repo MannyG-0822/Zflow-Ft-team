@@ -11,6 +11,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://nointernetcoin.com/wp-content/uploads/2025/12/zflow-logo.png">
 
+    <!-- Preload rocket image for instant display -->
+    <link rel="preload" as="image" href="images/rocket-icon.png">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -69,7 +72,14 @@
             <div class="mission-content">
                 <div class="mission-icon">
                     <div class="rocket-container">
-                        <img src="https://github.com/MannyG-0822/Zflow-Images/blob/main/rocket-icon-512x512.png?raw=true" alt="Rocket" class="rocket-icon">
+                        <img 
+                            src="images/rocket-icon.png" 
+                            alt="Rocket" 
+                            class="rocket-icon" 
+                            fetchpriority="high" 
+                            decoding="async" 
+                            onload="this.classList.add('loaded')"
+                        >
                     </div>
                 </div>
                 <h2>Our Mission</h2>
